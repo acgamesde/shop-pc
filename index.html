@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png">
+</head>
+<body>
+    <div id="myInfo" class="info">
+        <span title="Popup schließen">
+            <button class="red" onclick="myInfo()">X</button>
+        </span>
+        <div class="gg">
+            <p>Dies ist eine Webseite für ein Schulprojekt.<br>
+               Hier kann nichts gekauft werden!</p>
+        </div>
+    </div>
+    <div id="myHeader" class="header sticky">
+        <a class="home" href="index.html"><img src="images/logo-inverted.png" class="logolink"></a>
+        <a class="nav" href="shop.html">Shop</a>
+        <a class="nav" href="faq.html">FAQ</a>
+        <a class="nav" href="support.html">Support</a>
+    </div>
+
+    <div class="index">
+        <div class="over">
+            <h1 class="heading_a">PC Shop</h1>
+            <h2 class="heading_b">- create your dream pc build -</h2>
+        </div>
+        <video src="videos/Test2.mp4" autoplay muted loop></video>
+    </div>
+    <hr>
+    <hr>
+    <hr>
+    <div class="banner_a">
+        <img src="images/black.jpg" id="black">
+        <div class="text_shop_a">
+            <h1 class="heading_shop">Gaming PC´s</h1>
+            <p>Feritige Kontigurationen in verschiedenen Preisklassen mit Links zu den Teilen auf Geizhals. <br>Diese Konfigurationen können angepasst werden.</p>
+            <button class="add-shop" onclick="window.location.href='shop.html#Konfigurationen'">Konfigurationen</button>
+        </div>
+    </div>
+    <div class="banner_b">
+        <img src="images/white.jpg" id="white">
+        <div class="text_shop_b">
+            <h1 class="heading_shop">Frequently Asked Questions</h1>
+            <p>Häufig gestellte Fragen mit einer prägnanten Antwort.</p>
+            <button class="add-shop" onclick="window.location.href='faq.html'">FAQ</button>
+        </div>
+    </div>
+    <div class="banner_c">
+        <img src="images/Grafikkarte.jpg" id="gpu">
+        <div id="support">
+            <h1 class="heading_shop">Support</h1>
+            <p>Bei Problemen, Anliegen oder Fragen bitte im Support melden.</p>
+            <button class="add-shop" onclick="window.location.href='support.html'">Support</button>
+        </div>
+        <img src="images/Prozessor.jpg" id="cpu">
+    </div>
+        
+    
+    <script>
+        var info = document.getElementById("myInfo");
+        function myInfo() {
+            info.classList.add("hide");
+        }
+    </script>
+
+</body>
+</html>
